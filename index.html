@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio de Julienne Carole ONANA — Brand & Communications Manager. Marketing opérationnel, partenariats et campagnes terrain." />
+  <meta name="author" content="Julienne Carole ONANA" />
+  <title>portfolio Julienne CO.</title>
+  <meta property="og:title" content="portfolio Julienne CO." />
+  <meta property="og:description" content="Julienne Carole ONANA — Brand & Communications Manager. Marketing, partenariats et campagnes terrain." />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="portfolio Julienne CO." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav class="nav" id="nav">
+    <a class="logo" href="#cover">JCO.</a>
+    <div class="nav-links" id="nav-links">
+      <a href="#about" data-i18n="nav.about">À propos</a>
+      <a href="#work" data-i18n="nav.work">Projets</a>
+      <a href="#experience" data-i18n="nav.experience">Parcours</a>
+      <a href="#cv" data-i18n="nav.cv">CV</a>
+      <a class="nav-cta" href="#contact" data-i18n="nav.contact">Contact</a>
+    </div>
+    <div class="nav-tools">
+      <div class="lang-switch" role="group" aria-label="Language" data-i18n-aria="nav.lang">
+        <button type="button" class="lang-btn is-active" data-lang="fr">FR</button>
+        <span class="lang-sep" aria-hidden="true">/</span>
+        <button type="button" class="lang-btn" data-lang="en">EN</button>
+      </div>
+      <button class="menu-btn" id="menu-btn" aria-label="Menu" data-i18n-aria="nav.menu"><span></span><span></span></button>
+    </div>
+  </nav>
+
+  <section class="cover" id="cover">
+    <div class="cover-stage">
+      <img class="cover-photo" src="assets/cover-portrait.png" alt="Julienne Carole ONANA" />
+      <h1 class="cover-title">
+        <span class="line-hi" data-i18n="cover.hi">Salut,</span>
+        <span class="line-im" data-i18n="cover.im">je suis</span>
+        <span class="line-name" data-i18n-html="cover.name">Julienne<br />Carole</span>
+        <span class="line-last" data-i18n="cover.last">ONANA</span>
+      </h1>
+      <p class="cover-role" data-i18n-html="cover.role">votre spécialiste en marketing &amp; communication</p>
+      <div class="cover-social social">
+        <a class="social-link" href="mailto:Onanajulycarole@gmail.com" aria-label="Email">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6.75A1.75 1.75 0 0 1 4.75 5h14.5A1.75 1.75 0 0 1 21 6.75v10.5A1.75 1.75 0 0 1 19.25 19H4.75A1.75 1.75 0 0 1 3 17.25V6.75Zm1.8.75 6.7 4.68a.75.75 0 0 0 .84 0L19.2 7.5H4.8Z"/></svg>
+        </a>
+        <a class="social-link" href="https://wa.me/237698769717" target="_blank" rel="noopener" aria-label="WhatsApp">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 3.5A8.45 8.45 0 0 0 3.6 11.9c0 1.49.39 2.94 1.13 4.22L3.5 20.5l4.5-1.18A8.47 8.47 0 0 0 12.04 20.4 8.45 8.45 0 0 0 20.5 11.9 8.45 8.45 0 0 0 12.04 3.5Zm4.74 11.96c-.2.56-1.16 1.07-1.61 1.14-.41.06-.94.09-1.52-.1-.35-.11-.8-.26-1.38-.51-2.43-1.05-4.01-3.5-4.13-3.66-.12-.16-1-1.33-1-2.54s.63-1.8.86-2.05c.2-.22.44-.28.59-.28h.42c.14 0 .32-.05.5.38.2.46.67 1.63.73 1.75.06.12.1.26.02.42-.08.16-.12.26-.24.4-.12.14-.25.31-.36.42-.12.12-.24.25-.1.49.14.24.62 1.02 1.33 1.65.91.81 1.68 1.06 1.92 1.18.24.12.38.1.52-.06.14-.16.6-.7.76-.94.16-.24.32-.2.54-.12.22.08 1.4.66 1.64.78.24.12.4.18.46.28.06.1.06.58-.14 1.14Z"/></svg>
+        </a>
+        <a class="social-link" href="https://www.linkedin.com/in/julienne-carole-onana" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.54 8.75H3.76V20.1h2.78V8.75ZM5.14 4.1a1.62 1.62 0 1 0 0 3.24 1.62 1.62 0 0 0 0-3.24ZM20.24 20.1h-2.77v-5.52c0-1.32-.02-3.01-1.84-3.01-1.84 0-2.12 1.43-2.12 2.91V20.1H10.74V8.75h2.66v1.55h.04c.37-.7 1.27-1.84 2.62-1.84 2.8 0 3.32 1.84 3.32 4.24V20.1Z"/></svg>
+        </a>
+      </div>
+    </div>
+    <a class="scroll-hint" href="#about" data-i18n="cover.scroll">défiler</a>
+  </section>
+
+  <section class="about" id="about">
+    <div class="about-photo-wrap">
+      <img src="assets/about-portrait.png" alt="Julienne Carole ONANA en tailleur" />
+    </div>
+    <div class="about-copy">
+      <h2 data-i18n-html="about.title">à propos<br />de moi.</h2>
+      <p class="lead" data-i18n-html="about.lead">
+        Je suis <strong>Julienne Carole ONANA</strong> — Brand &amp; Communications Manager.
+      </p>
+      <p data-i18n-html="about.p1">
+        Je transforme la stratégie de marque en opérations terrain, partenariats et campagnes qui font bouger les chiffres.
+        De l’activation <em>Match Day</em> pour Betclic Cameroun pendant la Coupe du Monde 2026
+        aux déploiements FMCG pour Colgate-Palmolive et Deelite, je recrute, briefe, déploie et reporte —
+        jusqu’à ce que le brief devienne une preuve.
+      </p>
+      <p data-i18n="about.p2">
+        Bilingue français / anglais. À l’aise avec le positionnement de marque, le développement de partenariats,
+        les budgets campagnes et le reporting de performance. Cette page documente une femme qui construit
+        les marques sur le terrain, selon ses propres termes.
+      </p>
+      <dl class="about-meta">
+        <div><dt data-i18n="about.based">Basée</dt><dd data-i18n="about.basedVal">Douala, Cameroun</dd></div>
+        <div><dt data-i18n="about.focus">Focus</dt><dd data-i18n="about.focusVal">Marque · Terrain · Partenariats</dd></div>
+        <div><dt data-i18n="about.langs">Langues</dt><dd data-i18n="about.langsVal">FR natif · EN courant · DE B1</dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <section class="stats">
+    <div><strong>4 070</strong><span data-i18n="stats.s1">inscriptions · Match Day</span></div>
+    <div><strong>44</strong><span data-i18n="stats.s2">bars partenaires · Douala</span></div>
+    <div><strong>2 835</strong><span data-i18n="stats.s3">premiers dépôts</span></div>
+    <div><strong>100%</strong><span data-i18n="stats.s4">des cibles FMCG</span></div>
+  </section>
+
+  <section class="work" id="work">
+    <div class="section-intro">
+      <p class="kicker" data-i18n="work.kicker">Travaux sélectionnés</p>
+      <h2 data-i18n-html="work.title">Campagnes<br />qui ont compté.</h2>
+    </div>
+
+    <article class="case case-hero">
+      <p class="case-num">01</p>
+      <div>
+        <p class="case-tag" data-i18n="work.t1">Opérations terrain · Paris sportifs</p>
+        <h3 data-i18n="work.h1">Betclic Cameroun — Match Day, Coupe du Monde 2026</h3>
+        <p data-i18n-html="work.p1">
+          Field Operations &amp; Partnerships Manager pour Vijana Agency.
+          16 matchs, 44 bars partenaires à Douala. Recrutement et supervision des ambassadeurs,
+          protocoles d’accord, outils de tracking et reporting.
+          67% des objectifs : 4 070 inscriptions, 2 835 premiers dépôts, 2 552 premiers paris.
+        </p>
+      </div>
+    </article>
+
+    <div class="case-grid">
+      <article class="case">
+        <p class="case-num">02</p>
+        <p class="case-tag" data-i18n="work.t2">FMCG · Activation</p>
+        <h3 data-i18n-html="work.h2">Colgate-Palmolive &amp; Deelite</h3>
+        <p data-i18n="work.p2">
+          ICONProd Africa — activations en marchés et supermarchés
+          (Lacroix, Protex, Soupline, La Vache qui Rit).
+          Coordination terrain, logistique et budget. Jusqu’à 100% des cibles marques.
+        </p>
+      </article>
+      <article class="case">
+        <p class="case-num">03</p>
+        <p class="case-tag" data-i18n="work.t3">Business development</p>
+        <h3 data-i18n="work.h3">Volcano SARL</h3>
+        <p data-i18n="work.p3">
+          Portefeuille stratégique PMUC, Enko, CCA Bank.
+          Prospection, rétention, et acquisition de comptes clés pour l’agence.
+        </p>
+      </article>
+      <article class="case">
+        <p class="case-num">04</p>
+        <p class="case-tag" data-i18n="work.t4">Web marketing</p>
+        <h3 data-i18n="work.h4">Creative SARL</h3>
+        <p data-i18n="work.p4">
+          Stratégie web marketing : visibilité de marque, engagement,
+          premiers dispositifs digitaux au service de l’image.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <section class="experience" id="experience">
+    <div class="experience-layout">
+    <div class="experience-copy">
+    <div class="section-intro">
+      <p class="kicker" data-i18n="experience.kicker">Parcours</p>
+      <h2 data-i18n="experience.title">Là où la stratégie devient terrain.</h2>
+    </div>
+    <ol class="timeline">
+      <li>
+        <span data-i18n="experience.e1d">Juin 2026 — aujourd’hui</span>
+        <div>
+          <h3 data-i18n-html="experience.e1h">Field Operations &amp; Partnerships Manager</h3>
+          <p data-i18n-html="experience.e1p">Vijana Agency · client Betclic Cameroun</p>
+        </div>
+      </li>
+      <li>
+        <span data-i18n="experience.e2d">Juil. 2025 — janv. 2026</span>
+        <div>
+          <h3 data-i18n="experience.e2h">Consultante marketing</h3>
+          <p data-i18n="experience.e2p">Volcano SARL · PMUC, Enko, CCA Bank</p>
+        </div>
+      </li>
+      <li>
+        <span data-i18n="experience.e3d">Juil. 2024 — mai 2025</span>
+        <div>
+          <h3 data-i18n="experience.e3h">Project Manager — Activation commerciale</h3>
+          <p data-i18n="experience.e3p">ICONProd Africa · Colgate-Palmolive, Deelite</p>
+        </div>
+      </li>
+      <li>
+        <span data-i18n="experience.e4d">Juin 2023 — juil. 2024</span>
+        <div>
+          <h3 data-i18n="experience.e4h">Assistante de direction</h3>
+          <p data-i18n-html="experience.e4p">ICONProd Africa · coordination interne &amp; partenaires</p>
+        </div>
+      </li>
+      <li>
+        <span data-i18n="experience.e5d">Mai 2022 — janv. 2023</span>
+        <div>
+          <h3 data-i18n="experience.e5h">Customer Service Associate</h3>
+          <p data-i18n-html="experience.e5p">Activate Mobile Design · Apple Franchise</p>
+        </div>
+      </li>
+      <li>
+        <span data-i18n="experience.e6d">Déc. 2021 — mars 2022</span>
+        <div>
+          <h3 data-i18n="experience.e6h">Stagiaire — Web marketing</h3>
+          <p data-i18n="experience.e6p">Creative SARL</p>
+        </div>
+      </li>
+    </ol>
+    </div>
+    <figure class="experience-photo">
+      <img src="assets/parcours-lifestyle.png" alt="Julienne Carole ONANA — escarpins et ordinateur" />
+    </figure>
+    </div>
+  </section>
+
+  <section class="skills" id="skills">
+    <div class="section-intro">
+      <p class="kicker" data-i18n="skills.kicker">Expertise</p>
+      <h2 data-i18n="skills.title">Ce que je pilote.</h2>
+    </div>
+    <ul class="skill-list">
+      <li data-i18n-html="skills.s1">Stratégie de marque &amp; positionnement</li>
+      <li data-i18n-html="skills.s2">Communication corporate &amp; RP</li>
+      <li data-i18n-html="skills.s3">Pilotage de campagnes marketing</li>
+      <li data-i18n-html="skills.s4">Marketing digital &amp; contenus</li>
+      <li data-i18n-html="skills.s5">Coordination &amp; supervision d’équipes</li>
+      <li data-i18n="skills.s6">Développement de partenariats</li>
+      <li data-i18n="skills.s7">Négociation commerciale</li>
+      <li data-i18n-html="skills.s8">Analyse de performance &amp; reporting</li>
+      <li data-i18n="skills.s9">Gestion de budgets campagnes</li>
+      <li data-i18n="skills.s10">MS Office — Word, Excel, PowerPoint</li>
+    </ul>
+    <p class="edu" data-i18n-html="skills.edu">Bachelor Marketing et Communication · Ascencia Business School · 2022 – 2023</p>
+  </section>
+
+  <section class="cv" id="cv">
+    <div class="cv-card">
+      <p class="kicker" data-i18n="cv.kicker">Curriculum vitae</p>
+      <h2 data-i18n="cv.title">Le dossier, en une page.</h2>
+      <p data-i18n="cv.p">CV anglais à jour — expériences, chiffres, compétences et références.</p>
+      <div class="cv-actions">
+        <a class="btn" href="assets/CV_Carole_Onana_EN.pdf" target="_blank" rel="noopener" data-i18n="cv.open">Ouvrir le CV</a>
+        <a class="btn btn-ghost" href="assets/CV_Carole_Onana_EN.pdf" download data-i18n="cv.download">Télécharger le PDF</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="contact-grid">
+      <div>
+        <p class="kicker" data-i18n="contact.kicker">Contact</p>
+        <h2 data-i18n="contact.title">Écrivons la prochaine campagne.</h2>
+        <p class="lead" data-i18n="contact.lead">Un brief, un partenariat, une mission. Réponse sous 24 h.</p>
+        <ul class="contact-list">
+          <li>
+            <a href="mailto:Onanajulycarole@gmail.com">
+              <span class="contact-ico" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M3 6.75A1.75 1.75 0 0 1 4.75 5h14.5A1.75 1.75 0 0 1 21 6.75v10.5A1.75 1.75 0 0 1 19.25 19H4.75A1.75 1.75 0 0 1 3 17.25V6.75Zm1.8.75 6.7 4.68a.75.75 0 0 0 .84 0L19.2 7.5H4.8Z"/></svg>
+              </span>
+              Onanajulycarole@gmail.com
+            </a>
+          </li>
+          <li>
+            <a href="https://wa.me/237698769717" target="_blank" rel="noopener">
+              <span class="contact-ico" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M12.04 3.5A8.45 8.45 0 0 0 3.6 11.9c0 1.49.39 2.94 1.13 4.22L3.5 20.5l4.5-1.18A8.47 8.47 0 0 0 12.04 20.4 8.45 8.45 0 0 0 20.5 11.9 8.45 8.45 0 0 0 12.04 3.5Zm4.74 11.96c-.2.56-1.16 1.07-1.61 1.14-.41.06-.94.09-1.52-.1-.35-.11-.8-.26-1.38-.51-2.43-1.05-4.01-3.5-4.13-3.66-.12-.16-1-1.33-1-2.54s.63-1.8.86-2.05c.2-.22.44-.28.59-.28h.42c.14 0 .32-.05.5.38.2.46.67 1.63.73 1.75.06.12.1.26.02.42-.08.16-.12.26-.24.4-.12.14-.25.31-.36.42-.12.12-.24.25-.1.49.14.24.62 1.02 1.33 1.65.91.81 1.68 1.06 1.92 1.18.24.12.38.1.52-.06.14-.16.6-.7.76-.94.16-.24.32-.2.54-.12.22.08 1.4.66 1.64.78.24.12.4.18.46.28.06.1.06.58-.14 1.14Z"/></svg>
+              </span>
+              +237 698 769 717
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/julienne-carole-onana" target="_blank" rel="noopener">
+              <span class="contact-ico" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M6.54 8.75H3.76V20.1h2.78V8.75ZM5.14 4.1a1.62 1.62 0 1 0 0 3.24 1.62 1.62 0 0 0 0-3.24ZM20.24 20.1h-2.77v-5.52c0-1.32-.02-3.01-1.84-3.01-1.84 0-2.12 1.43-2.12 2.91V20.1H10.74V8.75h2.66v1.55h.04c.37-.7 1.27-1.84 2.62-1.84 2.8 0 3.32 1.84 3.32 4.24V20.1Z"/></svg>
+              </span>
+              LinkedIn
+            </a>
+          </li>
+          <li data-i18n="about.basedVal">Douala, Cameroun</li>
+        </ul>
+      </div>
+      <form class="form" id="contact-form">
+        <label><span data-i18n="contact.name">Nom</span><input type="text" name="name" required placeholder="Votre nom" autocomplete="name" data-i18n-placeholder="contact.namePh" /></label>
+        <label><span data-i18n="contact.email">Email</span><input type="email" name="email" required placeholder="vous@marque.com" autocomplete="email" data-i18n-placeholder="contact.emailPh" /></label>
+        <label class="full"><span data-i18n="contact.message">Message</span><textarea name="message" rows="5" required placeholder="Objectif, dates, canaux…" data-i18n-placeholder="contact.messagePh"></textarea></label>
+        <button class="btn" type="submit" data-i18n="contact.send">Envoyer</button>
+        <p class="form-status" id="form-status" role="status"></p>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-brand">
+      <a class="logo" href="#cover">JCO.</a>
+      <p>Julienne Carole ONANA</p>
+      <p data-i18n-html="footer.role">Marketing &amp; Communication · Douala</p>
+    </div>
+    <div class="footer-links">
+      <a href="#about" data-i18n="nav.about">À propos</a>
+      <a href="#work" data-i18n="nav.work">Projets</a>
+      <a href="#cv" data-i18n="nav.cv">CV</a>
+      <a href="#contact" data-i18n="nav.contact">Contact</a>
+    </div>
+    <div class="footer-social social">
+      <a class="social-link" href="mailto:Onanajulycarole@gmail.com" aria-label="Email">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6.75A1.75 1.75 0 0 1 4.75 5h14.5A1.75 1.75 0 0 1 21 6.75v10.5A1.75 1.75 0 0 1 19.25 19H4.75A1.75 1.75 0 0 1 3 17.25V6.75Zm1.8.75 6.7 4.68a.75.75 0 0 0 .84 0L19.2 7.5H4.8Z"/></svg>
+      </a>
+      <a class="social-link" href="https://wa.me/237698769717" target="_blank" rel="noopener" aria-label="WhatsApp">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 3.5A8.45 8.45 0 0 0 3.6 11.9c0 1.49.39 2.94 1.13 4.22L3.5 20.5l4.5-1.18A8.47 8.47 0 0 0 12.04 20.4 8.45 8.45 0 0 0 20.5 11.9 8.45 8.45 0 0 0 12.04 3.5Zm4.74 11.96c-.2.56-1.16 1.07-1.61 1.14-.41.06-.94.09-1.52-.1-.35-.11-.8-.26-1.38-.51-2.43-1.05-4.01-3.5-4.13-3.66-.12-.16-1-1.33-1-2.54s.63-1.8.86-2.05c.2-.22.44-.28.59-.28h.42c.14 0 .32-.05.5.38.2.46.67 1.63.73 1.75.06.12.1.26.02.42-.08.16-.12.26-.24.4-.12.14-.25.31-.36.42-.12.12-.24.25-.1.49.14.24.62 1.02 1.33 1.65.91.81 1.68 1.06 1.92 1.18.24.12.38.1.52-.06.14-.16.6-.7.76-.94.16-.24.32-.2.54-.12.22.08 1.4.66 1.64.78.24.12.4.18.46.28.06.1.06.58-.14 1.14Z"/></svg>
+      </a>
+      <a class="social-link" href="https://www.linkedin.com/in/julienne-carole-onana" target="_blank" rel="noopener" aria-label="LinkedIn">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.54 8.75H3.76V20.1h2.78V8.75ZM5.14 4.1a1.62 1.62 0 1 0 0 3.24 1.62 1.62 0 0 0 0-3.24ZM20.24 20.1h-2.77v-5.52c0-1.32-.02-3.01-1.84-3.01-1.84 0-2.12 1.43-2.12 2.91V20.1H10.74V8.75h2.66v1.55h.04c.37-.7 1.27-1.84 2.62-1.84 2.8 0 3.32 1.84 3.32 4.24V20.1Z"/></svg>
+      </a>
+    </div>
+    <p class="footer-copy">© <span id="year"></span> Julienne Carole ONANA · <span data-i18n="footer.rights">Tous droits réservés</span></p>
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="i18n.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
