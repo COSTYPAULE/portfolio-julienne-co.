@@ -111,61 +111,77 @@ section[id] { scroll-margin-top: 4.5rem; }
   display: block;
   mix-blend-mode: multiply;
 }
+
+/* --- Titre principal à gauche --- */
 .cover-title {
   position: absolute;
-  left: 4.2%;
-  top: 6.5%;
-  width: min(44%, 20rem);
+  left: 5%;
+  top: 5%;
+  width: min(45%, 22rem);
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
   text-align: left;
   padding: 0;
-  font-family: "Playfair Display", serif;
+  font-family: "Cormorant Garamond", serif;
+  font-style: italic;
   font-weight: 400;
-  font-style: normal;
-  line-height: 0.92;
+  line-height: 0.95;
   pointer-events: none;
   color: var(--ink);
   z-index: 2;
 }
-.line-hi,
+
+.line-hi {
+  display: block;
+  font-size: clamp(3.2rem, 8vw, 6.8rem);
+  letter-spacing: -0.02em;
+  margin-bottom: 0.8rem;
+}
+
 .line-im {
   display: block;
-  font-size: clamp(2.6rem, 6.4vw, 5.6rem);
-  letter-spacing: -0.03em;
+  font-size: clamp(3.2rem, 8vw, 6.8rem);
+  letter-spacing: -0.02em;
+  margin-bottom: 1rem;
 }
+
 .line-name {
   display: block;
-  font-size: clamp(1.85rem, 4.5vw, 3.85rem);
-  margin-top: 0.12rem;
+  font-size: clamp(2.8rem, 7vw, 5.8rem);
+  line-height: 1.05;
+  margin-bottom: 1.2rem;
 }
+
 .line-last {
   display: block;
-  margin-top: 0.55rem;
-  font-family: "Cormorant Garamond", serif;
-  font-style: italic;
-  font-weight: 600;
-  font-size: clamp(1.45rem, 2.4vw, 2.15rem);
-  letter-spacing: 0.22em;
-  text-transform: none;
+  font-family: Outfit, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: clamp(0.85rem, 1.5vw, 1.15rem);
+  letter-spacing: 0.35em;
+  text-transform: uppercase;
+  color: var(--ink);
+  margin-top: 0.4rem;
 }
+
+/* --- Description remontée tout en haut à droite (ne touche pas la photo) --- */
 .cover-role {
   position: absolute;
   right: 3.5%;
-  top: 15%;
-  width: min(46%, 22rem);
+  top: 10%;
+  width: min(38%, 18rem);
   font-family: "Cormorant Garamond", serif;
   font-style: italic;
   font-weight: 500;
-  font-size: clamp(1.28rem, 2.35vw, 1.82rem);
-  line-height: 1.38;
+  font-size: clamp(1.25rem, 2.3vw, 1.85rem);
+  line-height: 1.45;
   text-align: right;
-  max-width: none;
-  z-index: 2;
-  text-shadow: 0 1px 12px rgba(244, 239, 232, 0.7);
+  z-index: 4;
+  color: var(--ink);
 }
+
 .cover-social {
   position: absolute;
   left: 1.3rem;
@@ -593,8 +609,8 @@ section[id] { scroll-margin-top: 4.5rem; }
   .about-copy { padding: 6.5rem 5vw 3rem 2.2vw; }
   .about-copy h2 { font-size: clamp(2.4rem, 8vw, 4.4rem); }
   .about-photo-wrap img { height: 100vh; object-fit: contain; }
-  .cover-title { width: min(52%, 16rem); left: 4%; top: 5.5%; }
-  .cover-role { top: 14%; right: 2.5%; width: min(48%, 20rem); }
+  .cover-title { width: min(52%, 18rem); left: 4%; top: 4%; }
+  .cover-role { top: 8%; right: 2.5%; width: min(40%, 16rem); }
   .experience-photo img { min-height: 420px; }
 }
 
@@ -606,15 +622,23 @@ section[id] { scroll-margin-top: 4.5rem; }
   .cover-stage { width: min(100%, 96vw); }
   .cover-title {
     width: auto;
-    max-width: 72%;
+    max-width: 80%;
     left: 5%;
-    top: 4.5%;
+    top: 3.5%;
     align-items: flex-start;
     text-align: left;
   }
-  .line-hi, .line-im { font-size: clamp(2.3rem, 12vw, 3.4rem); }
-  .line-name { font-size: clamp(1.7rem, 9vw, 2.5rem); }
-  .cover-role { top: 11%; right: 3%; bottom: auto; width: min(52%, 16rem); }
+  .line-hi, .line-im { font-size: clamp(2.4rem, 11vw, 3.8rem); margin-bottom: 0.4rem; }
+  .line-name { font-size: clamp(2rem, 9vw, 3.2rem); margin-bottom: 0.5rem; }
+  .cover-role { 
+    top: auto; 
+    bottom: 3.8rem; 
+    right: 5%; 
+    left: 5%; 
+    width: auto; 
+    text-align: center;
+    font-size: clamp(1.2rem, 4.5vw, 1.6rem);
+  }
   .cover-social { left: 50%; transform: translateX(-50%); bottom: 0.85rem; }
   .footer-links { flex-direction: row; flex-wrap: wrap; gap: 0.9rem 1.2rem; }
 }
